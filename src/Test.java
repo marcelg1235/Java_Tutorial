@@ -1,63 +1,51 @@
 public class Test {
     public static void main(String[] args){
-        int num1 = 4;
-        int num2 = 2;
-        int num3 = 3;
+        int day = 10;
+        String dayName;
 
-        //Arithmetic operators
-        int sum = num1 + num2;
-        int diff = num1 - num2;
-        int prod = num1 * num2;
-        int quot = num1 / num3;
-        int rem = num1 % num3;
-
-        System.out.println("Sum: " + sum);
-        System.out.println("Difference: " + diff);
-        System.out.println("Product: " + prod);
-        System.out.println("Quotient: " + quot);
-        System.out.println("Remainder: " + rem);
-
-        //Comparison operators
-        /*
-            ==
-            !=
-            <
-            <=
-            >
-            >=
-         */
-
-        //Logical operators
-        /*
-            &&
-            ||
-            !
-         */
-
-        int age = 24;
-        boolean isStudent = true;
-
-        if (age == 24 || !(isStudent == false)){
-            System.out.println("First if");
-        } else if (age == 25){
-            System.out.println("Second if");
-        } else {
-            System.out.println("Else");
+        switch (day){
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+            case 7:
+                dayName = "Weekend";
+                break;
+            default:
+                dayName = "Invalid input";
+                break;
         }
 
-        //Strings
-        String st1 = "Hello";
-        String st2 = "Hel";
-        st2 += "lo";
-
-        System.out.println("STR1: " +st1);
-        System.out.println("STR2: " +st2);
-
-        if (st1.equals(st2)){
-            System.out.println("Equal");
+        /*if (day == 1){
+            dayName = "Monday";
+        } else if (day == 2) {
+            dayName = "Tuesday";
+        } else if (day == 3) {
+            dayName = "Wednesday";
+        } else if (day == 4) {
+            dayName = "Thursday";
+        } else if (day == 5) {
+            dayName = "Friday";
+        } else if (day == 6) {
+            dayName = "Weekend";
+        } else if (day == 7) {
+            dayName = "Weekend";
         } else {
-            System.out.println("NOP");
-        }
+            dayName = "Invalid input";
+        }*/
 
+        System.out.println("It's: " + dayName);
     }
 }
