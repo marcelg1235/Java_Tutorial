@@ -1,25 +1,15 @@
 public class Test {
     public static void main(String[] args){
-        // While-Loop
-        int i = 0;
-        int a = 5;
-        while (i < a){
-            System.out.println(i);
-            i++;
+        int[] numbers = new int[5]; // {10 ,20, 30, 40, 50}
+
+        numbers[0] = 10;
+        numbers[1] = 11;
+        numbers[2] = 12;
+        numbers[3] = 13;
+        numbers[4] = 14;
+
+        for (int i = 0; i < numbers.length; i++){
+            System.out.println(numbers[i]);
         }
-
-        //Do-While-Loop
-        i = 0;
-        do {
-            System.out.println(i);
-            i++;
-        } while (i < a);
-
-        //For-Loop
-
-        for (int x = 0; x < a; x++){
-            System.out.println(x);
-        }
-
     }
 }
